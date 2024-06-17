@@ -1,0 +1,93 @@
+version: "3.9"
+
+services:
+  mongodb:
+    image: mongo:latest
+    ports:
+      - 27017:27017
+    volumes:
+      - mongodata:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=mongo
+      - MONGO_INITDB_ROOT_PASSWORD=mongo
+  postgres:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgresdata:/var/lib/postgresql/data
+      - ./setup.sql:/docker-entrypoint-initdb.d/setup.sql
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=dapp_analytics
+  wasabi-image:
+    image: patternsjrojek/subsquid-squids:wasabi-latest
+    command: ["echo", "Processor image wasabi-latest pulled successfully. No service started."]
+
+  creator-client:
+    build:
+      context: ./dashboard-creator-client
+      dockerfile: localhost.Dockerfile
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./dashboard-creator-client:/app/
+      - /app/node_modules
+    environment:
+      - PORT=5173
+    depends_on:
+      - creator-server
+  creator-server:
+    user: root
+    build:
+      context: ./dashboard-creator-server
+      dockerfile: dev.Dockerfile
+    restart: always
+    command: "npm run start:dev"
+    ports:
+      - 8081:8081
+    environment:
+      - NODE_ENV=development
+      - PORT=8081
+      - API_KEY_TOKEN=token
+      - MONGODB_URL=mongodb://mongo:mongo@mongodb:27017
+      - MONGODB_DB_NAME=dc-db
+      - CLIENT_URL=http://localhost:5173
+      - API_BASE_URL=http://db-api:8082
+    volumes:
+      - "./dashboard-creator-server/src:/app/src"
+      - "./dashboard-creator-server/scripts/db:/app/scripts/db"
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    depends_on:
+      - mongodb
+      - db-api
+  db-api:
+    build:
+      context: ./db-api
+      dockerfile: dev.Dockerfile
+    ports:
+      - "8082:8082"
+    entrypoint: ["sh", "entrypoint.sh"]
+    volumes:
+      - ./db-api:/app
+    environment:
+      - QUERIES_DB_HOST=postgres
+      - QUERIES_DB_USER=postgres
+      - QUERIES_DB_PASSWORD=postgres
+      - QUERIES_DB_NAME=dbapi
+      - QUERIES_DB_PORT=5432
+      - DATA_DB_HOST=postgres
+      - DATA_DB_USER=postgres
+      - DATA_DB_PASSWORD=postgres
+      - DATA_DB_NAMES=azero_mainnet_squid,crosschain
+      - DATA_DB_PORT=5432
+      - DAPP_ANALYTICS_DB_HOST=postgres
+      - DAPP_ANALYTICS_DB_USER=postgres
+      - DAPP_ANALYTICS_DB_PASSWORD=postgres
+      - DAPP_ANALYTICS_DB_NAME=dapp_analytics
+      - DAPP_ANALYTICS_DB_PORT=5432
+      - PORT=8082
+volumes:
+  mongodata:
+  postgresdata:
