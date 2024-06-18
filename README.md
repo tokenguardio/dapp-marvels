@@ -1,8 +1,12 @@
-## dApp Marvels
+![Tokenguard](https://uploads-ssl.webflow.com/64106628fe8d9d429a9e5610/66715794666a62146afe19c5_logo_poziom_bez_tla.png)
 
-Welcome to the dApp Marvels repository! This repository consists of handy setup scripts to help you get started with dApp Marvels.  
+## dApp Marvels 💎
+
+Welcome to the dApp Marvels repository! This repository consists of handy setup scripts to help you get started with dApp Marvels - an on-chain analytics tool designed for Ink! dApps builders to support their growth and operations through in-depth metrics and analytics of on-chain user behavior.
+
+dApp Marvels will help to Polkadot builders create their dApps & protocols faster and easily analyze data coming from their smart contracts without additional hassle.
   
-This guide covers how to set up and run the project for Aleph Zero chain. This respository is umbrella part of a bigger system consisting of 3 components + corresponding databases.
+This guide covers how to set up and run the project for Substrate-bases chains. This respository is umbrella part of a bigger system consisting of 3 components + corresponding databases.
 
 1. [dashboard-creator-server](https://github.com/tokenguardio/dashboard-creator-server/) - the backend service storing information about built dashboards and queries
 2. [dashboard-creator-client](https://github.com/tokenguardio/dashboard-creator-client/) - frontend app
