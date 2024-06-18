@@ -43,7 +43,6 @@ services:
       context: ./dashboard-creator-server
       dockerfile: Dockerfile
     restart: always
-    command: "npm run start:prod"
     ports:
       - 8081:8081
     environment:
@@ -87,6 +86,8 @@ services:
       - DAPP_ANALYTICS_DB_NAME=dapp_analytics
       - DAPP_ANALYTICS_DB_PORT=5432
       - PORT=8082
+    depends_on:
+      - postgres
 volumes:
   mongodata:
   postgresdata:
