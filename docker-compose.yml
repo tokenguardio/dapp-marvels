@@ -39,12 +39,11 @@ services:
     depends_on:
       - creator-server
   creator-server:
-    user: root
     build:
       context: ./dashboard-creator-server
-      dockerfile: dev.Dockerfile
+      dockerfile: Dockerfile
     restart: always
-    command: "npm run start:dev"
+    command: "npm run start:prod"
     ports:
       - 8081:8081
     environment:
@@ -65,7 +64,7 @@ services:
   db-api:
     build:
       context: ./db-api
-      dockerfile: dev.Dockerfile
+      dockerfile: Dockerfile
     ports:
       - "8082:8082"
     entrypoint: ["sh", "entrypoint.sh"]
@@ -75,12 +74,12 @@ services:
       - QUERIES_DB_HOST=postgres
       - QUERIES_DB_USER=postgres
       - QUERIES_DB_PASSWORD=postgres
-      - QUERIES_DB_NAME=dbapi
+      - QUERIES_DB_NAME=dapp_analytics
       - QUERIES_DB_PORT=5432
       - DATA_DB_HOST=postgres
       - DATA_DB_USER=postgres
       - DATA_DB_PASSWORD=postgres
-      - DATA_DB_NAMES=azero_mainnet_squid,crosschain
+      - DATA_DB_NAMES=dapp_analytics
       - DATA_DB_PORT=5432
       - DAPP_ANALYTICS_DB_HOST=postgres
       - DAPP_ANALYTICS_DB_USER=postgres

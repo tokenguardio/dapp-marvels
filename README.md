@@ -19,11 +19,14 @@ Before you begin, make sure you have the following installed on your system:
 - [Docker Compose](https://docs.docker.com/compose/install/)
 
 ### Features
-
+- **dApp decoding**: with user-provided contract ABIs this app is able to index decoded interactions with the dApp
+- **dApp indexing**: automated deployments of subsquid indexers
 - **API Reading Mechanism**: Connect frontend visualizations with underlying data through a RESTful API built with NodeJS and Express.
 - **Data Storage**: Store visualization and dashboard-related data in MongoDB for efficient retrieval and management.
 - **Scalability**: Built with scalability in mind to handle large datasets and user traffic effectively.
-
+- **Metrics Visualisation**: Visualize data from raw sources using customizable visualizations such as line charts, bar charts, pie charts, and more.
+- **Dashboard Layout**: Create, save, modify, and delete dashboards with drag-and-drop functionality. Customize dashboard layouts with captions, titles, and links.
+- **User-Friendly Interface**: Intuitive user interface for seamless dashboard creation and customization.
 
 ### Getting started
 
@@ -34,8 +37,6 @@ For simple and smooth application rollout you can pull all required repositories
 
 The script pulls repositories in locations expected by `docker-compose.yml` file enclosed in this repository.
 ```
-mkdir dapp-analytics
-cd dapp-analytics
 git clone https://github.com/tokenguardio/dashboard-creator-client.git
 cd dashboard-creator-client
 git checkout dapp-analytics-dev
@@ -55,12 +56,21 @@ docker-compose up
 ```
 After the environment starts, you should be able to see the frontend app of dApp Marvels at [localhost:5173](http://localhost:5173)
 
+### Cleanup
+To clean up environment, simply run 
+```
+./cleanup.sh
+```
+
 ### Tech Stack
 
 - **Backend Framework**: NodeJS with Express
 - **Database**: MongoDB, PostgreSQL
 - **API Documentation**: OpenAPI
 - **Development Tool**: Docker
+- **Frontend Framework**: ReactJS, TypeScript, ViteJS
+- **Data Storage**: MongoDB
+- **Visualization Library**: Apache ECharts
 
 ### Contributing
 
