@@ -2,7 +2,7 @@
     <img src="https://uploads-ssl.webflow.com/64106628fe8d9d429a9e5610/66715794666a62146afe19c5_logo_poziom_bez_tla.png" alt="tokenguard" height="80" />
     </div>
 
-## Analyze growth of your favorite Web3 Projects
+## Analyze data from your Substrate smart contracts
 
 Tokenguard was founded to help web3 projects grow and build utility around their products. We know how to build successful dApps & ecosystems solving real problems with blockchain technology and we want to allow the whole industry to follow this path.
 
