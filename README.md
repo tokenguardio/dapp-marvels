@@ -56,6 +56,14 @@ Before you begin, make sure you have the following installed on your system:
 - **Dashboard Layout**: Create, save, modify, and delete dashboards with drag-and-drop functionality. Customize dashboard layouts with captions, titles, and links.
 - **User-Friendly Interface**: Intuitive user interface for seamless dashboard creation and customization.
 
+### Use examples
+![image](https://github.com/tokenguardio/dapp-marvels/assets/56157619/87903556-f748-4cfd-8a3a-bb34913e78fb)
+![image](https://github.com/tokenguardio/dapp-marvels/assets/56157619/e99eaf50-4230-40ac-8de2-f8d3cf651cf4)
+![image](https://github.com/tokenguardio/dapp-marvels/assets/56157619/03aff2d5-73ed-4e9b-9139-03ed6368de27)
+
+
+
+
 ### Getting started
 
 For simple and smooth application rollout you can pull all required repositories into fresh directory using a script provided in this repository: 
