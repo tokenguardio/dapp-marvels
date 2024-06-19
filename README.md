@@ -57,11 +57,11 @@ Before you begin, make sure you have the following installed on your system:
 - **User-Friendly Interface**: Intuitive user interface for seamless dashboard creation and customization.
 
 ### Use examples
-![image](https://github.com/tokenguardio/dapp-marvels/assets/56157619/87903556-f748-4cfd-8a3a-bb34913e78fb)
-![image](https://github.com/tokenguardio/dapp-marvels/assets/56157619/e99eaf50-4230-40ac-8de2-f8d3cf651cf4)
-![image](https://github.com/tokenguardio/dapp-marvels/assets/56157619/03aff2d5-73ed-4e9b-9139-03ed6368de27)
-
-
+<img src="https://github.com/tokenguardio/dapp-marvels/assets/56157619/977843b7-f9c3-4b97-a3c5-097ca7c3e0fc" style="height: 300px">
+<img src="https://github.com/tokenguardio/dapp-marvels/assets/56157619/be60d7fb-581b-4b81-8414-64029d6c5a1d" style="height: 300px">
+<img src="https://github.com/tokenguardio/dapp-marvels/assets/56157619/87dda95e-721b-49a1-8ae6-c27ba8c76a24" style="height: 300px">
+<img src="https://github.com/tokenguardio/dapp-marvels/assets/56157619/19069b6c-4db6-49aa-b75c-b43849049977" style="height: 300px">
+<img src="https://github.com/tokenguardio/dapp-marvels/assets/56157619/aa9780df-e363-4d94-9fab-9f8dd9cc0e1a" style="height: 300px">
 
 
 ### Getting started
