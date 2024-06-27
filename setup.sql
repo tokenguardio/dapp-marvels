@@ -1,5 +1,4 @@
 CREATE USER squid WITH PASSWORD 'postgres';
-
 CREATE SCHEMA IF NOT EXISTS dapp_analytics AUTHORIZATION squid;
 ALTER USER squid
 SET

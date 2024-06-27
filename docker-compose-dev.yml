@@ -27,10 +27,14 @@ services:
       ]
 
   creator-client:
-    image: patternsjrojek/dashboard-creator:client-v3.0.1
+    build:
+      context: ./dashboard-creator-client
+      dockerfile: localhost.Dockerfile
+    command: "npm run dev"  
     ports:
       - "5173:5173"
     volumes:
+      - ./dashboard-creator-client:/app/
       - /app/node_modules
     env_file:
       - ./envs/creator-client.env
@@ -38,7 +42,9 @@ services:
       - creator-server
   creator-server:
     user: root
-    image: patternsjrojek/dashboard-creator:server-v3.0.1
+    build:
+      context: ./dashboard-creator-server
+      dockerfile: Dockerfile
     restart: always
     command: ["npm", "run", "start:dev"]
     ports:
@@ -46,14 +52,21 @@ services:
     env_file:
       - ./envs/creator-server.env
     volumes:
+      - "./dashboard-creator-server/src:/app/src"
+      - "./dashboard-creator-server/scripts/db:/app/scripts/db"
       - "/var/run/docker.sock:/var/run/docker.sock"
     depends_on:
       - mongodb
       - db-api
   db-api:
-    image: patternsjrojek/db-api:v1.4.1
+    build:
+      context: ./db-api
+      dockerfile: Dockerfile
     ports:
       - "8082:8082"
+    command: ["npm", "run", "start:dev"]
+    volumes:
+      - ./db-api:/app
     env_file:
       - ./envs/db-api.env
     depends_on:

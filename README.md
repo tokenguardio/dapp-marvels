@@ -66,12 +66,16 @@ Before you begin, make sure you have the following installed on your system:
 
 ### Getting started
 
-For simple and smooth application rollout you can pull all required repositories into fresh directory using a script provided in this repository: 
+#### Fastest
+If you just want to start the project to see how it works, just run `docker-compose up` and it will pull recent images of services and run the app.  
+
+#### For devs
+For simple and smooth application rollout for further customization and development purposes you can pull all required repositories into fresh directory using a script provided in this repository: 
 ```
 ./setup-env.sh
 ```
 
-The script pulls repositories in locations expected by `docker-compose.yml` file enclosed in this repository.
+The script pulls repositories in locations expected by `docker-compose-dev.yml` file enclosed in this repository.
 ```
 git clone https://github.com/tokenguardio/dashboard-creator-client.git
 cd dashboard-creator-client
@@ -88,7 +92,7 @@ cd ..
 ```
 After the script is done, all you have to do is to let docker-compose run and build/pull all required images.
 ```
-docker-compose up
+docker-compose -f docker-compose-dev.yml up
 ```
 After the environment starts, you should be able to see the frontend app of dApp Marvels at [localhost:5173](http://localhost:5173)
 
