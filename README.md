@@ -1,12 +1,12 @@
 <div align="left">
-    <img src="https://cdn.prod.website-files.com/6645e490e589077daad8a58e/67dd4b0fa3a811e079705ef8_Github%20header_20250321.jpg" alt="patterns" height="80" />
+    <img src="https://cdn.prod.website-files.com/6645e490e589077daad8a58e/67dd4b0fa3a811e079705ef8_Github%20header_20250321.jpg" alt="patterns" height="240" />
     </div>
 
 ## Analyze data from your Solidity & Ink! smart contracts
 
 Patterns was founded to help web3 projects grow and build utility around their products. We know how to build successful dApps & ecosystems solving real problems with blockchain technology and we want to allow the whole industry to follow this path.
 
-[View Live App](https://patterns.build/web3-crm) 
+[Patterns app is available for free here >>](https://patterns.build/web3-crm) 
 
 [Learn more about Patterns](https://patterns.build/about-us)
 
@@ -19,6 +19,10 @@ Patterns was founded to help web3 projects grow and build utility around their p
 
 ### Supported blockchains:
 <div style="display: flex; gap: 16px;">
+  <img src="https://cdn.prod.website-files.com/6645e490e589077daad8a58e/67dd4eb81d68da2f66bbf6f9_optimism-logo.png" style="height: 40px">
+  <img src="https://cdn.prod.website-files.com/6645e490e589077daad8a58e/67dd4eb80b8ce16c28ace135_ethereum-logo.png" style="height: 40px">
+  <img src="https://cdn.prod.website-files.com/6645e490e589077daad8a58e/67dd4eb887f98cfcd2581673_binance-logo.png" style="height: 40px">
+  <img src="https://cdn.prod.website-files.com/6645e490e589077daad8a58e/67dd4eb8a7c76f3fc39a975f_arbitrum-logo.png" style="height: 40px">
   <img src="https://uploads-ssl.webflow.com/6645e490e589077daad8a58e/667193cb305eadd978bfb9f5_azero.png" style="height: 40px">
   <img src="https://uploads-ssl.webflow.com/6645e490e589077daad8a58e/667193cb70cf38587b87f488_moonbeam.png" style="height: 40px">
   <img src="https://uploads-ssl.webflow.com/6645e490e589077daad8a58e/667193cdaa25d6c28bfea28f_astar.png" style="height: 40px">
