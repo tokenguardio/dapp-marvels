@@ -1,20 +1,20 @@
 <div align="left">
-    <img src="https://uploads-ssl.webflow.com/64106628fe8d9d429a9e5610/66715794666a62146afe19c5_logo_poziom_bez_tla.png" alt="tokenguard" height="80" />
+    <img src="https://cdn.prod.website-files.com/6645e490e589077daad8a58e/67dd4b0fa3a811e079705ef8_Github%20header_20250321.jpg" alt="patterns" height="80" />
     </div>
 
-## Analyze data from your Ink! smart contracts
+## Analyze data from your Solidity & Ink! smart contracts
 
-Tokenguard was founded to help web3 projects grow and build utility around their products. We know how to build successful dApps & ecosystems solving real problems with blockchain technology and we want to allow the whole industry to follow this path.
+Patterns was founded to help web3 projects grow and build utility around their products. We know how to build successful dApps & ecosystems solving real problems with blockchain technology and we want to allow the whole industry to follow this path.
 
-[View Live App](https://app.tokenguard.io) 
+[View Live App](https://patterns.build/web3-crm) 
 
-[Learn more about Tokenguard](https://tokenguard.io/about)
+[Learn more about Patterns](https://patterns.build/about-us)
 
 ### Social channels:
 <div style="display: flex; gap: 24px;">
-  <a href="https://x.com/Tokenguard_io"><img src="https://uploads-ssl.webflow.com/6645e490e589077daad8a58e/667193cb5fbe25aecdd789ce_twitter.png" style="height: 24px"></a>
-  <a href="https://www.linkedin.com/company/tokenguard-io"><img src="https://uploads-ssl.webflow.com/6645e490e589077daad8a58e/667193cbdf5adefa16664be0_linkedin.png" style="height: 24px"></a>
-  <a href="https://t.me/tokenguard_io"><img src="https://uploads-ssl.webflow.com/6645e490e589077daad8a58e/667193cb5a75346d735fe5bf_telegram.png" style="height: 24px"></a>
+  <a href="https://x.com/patterns_build"><img src="https://uploads-ssl.webflow.com/6645e490e589077daad8a58e/667193cb5fbe25aecdd789ce_twitter.png" style="height: 24px"></a>
+  <a href="https://www.linkedin.com/company/patterns-build/"><img src="https://uploads-ssl.webflow.com/6645e490e589077daad8a58e/667193cbdf5adefa16664be0_linkedin.png" style="height: 24px"></a>
+  <a href="https://t.me/Patterns_io"><img src="https://uploads-ssl.webflow.com/6645e490e589077daad8a58e/667193cb5a75346d735fe5bf_telegram.png" style="height: 24px"></a>
 </div>
 
 ### Supported blockchains:
@@ -114,7 +114,7 @@ To clean up environment, simply run
 
 ### Contributing
 
-We encourage contributions from the community! If you'd like to contribute to the Tokenguard Dashboard Builder Server, please refer to our [contribution guidelines](CONTRIBUTING.md) for more information.
+We encourage contributions from the community! If you'd like to contribute to the Patterns Dashboard Builder Server, please refer to our [contribution guidelines](CONTRIBUTING.md) for more information.
 
 ### License
 
