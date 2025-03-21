@@ -2,7 +2,7 @@
     <img src="https://cdn.prod.website-files.com/6645e490e589077daad8a58e/67dd4b0fa3a811e079705ef8_Github%20header_20250321.jpg" alt="patterns" height="240" />
     </div>
 
-## Analyze data from your Solidity & Ink! smart contracts
+## Analyze wallet behaviour and preview CRM of your Solidity & Ink! based dApp
 
 Patterns was founded to help web3 projects grow and build utility around their products. We know how to build successful dApps & ecosystems solving real problems with blockchain technology and we want to allow the whole industry to follow this path.
 
